@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>Examen Parcial II</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <Header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid navbar-style">
+                <a class="navbar-brand m-2" href="#">
+                    <img src="/Recursos/logo.png" class="img-effect" alt="Logo Sitio" height="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end m-4" id="navbarNavAltMarkup">
+
+                    <a class="nav-link mx-4" href="/Docs/Contactanos.html">Contactanos</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                        <img src="/Recursos/login.png" class="img-login" alt="login" height="40px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </Header>
+
+    <!-- Fin Header -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar Sesión</h1>
+                    <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+
+                    <form id="frm_sesion" action="" class="row g-3 needs-validation" novalidate>
+
+                        <div class="mb-3">
+                            <div class="text-modal">
+                                <label for="txt_usuario" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="txt_usuario" required>
+                                <div class="invalid-feedback">
+                                    Debe ingresar un usuario.
+                                </div>
+                            </div>
+
+                            <div class="text-modal">
+                                <label for="txt_contrasenna" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="txt_contrasenna" required>
+                                <div class="invalid-feedback">
+                                    Debe ingresar una contraseña.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-modal">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                                <label class="form-check-label" for="invalidCheck">
+                                    Desea mantener la Sesión iniciada?
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                            <button id="btn_ingresar" type="submit" class="btn btn-danger">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin Modal -->
+
+    <!-- Contenedor Principal -->
+
+    <div class="main-container">
+
+        <!-- Contenido principal -->
+        <div class="container-cover">
+
+            <img src="/Recursos/cover-image.jpg" class="img-fluid" alt="Starfield">
+
+            <div class="texto-cover">
+                <p id="first-text">En 12 días</p>
+                <h3>Starfield Digital Premium<br>Edition + Acceso Anticipado</h3>
+
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <h5 id="sec-text">-22%</h5>
+                        </div>
+                        <div class="col">
+                            <h1 class="h1">77.99€</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Contenido principal -->
+
+        <hr class="separador">
+
+        <!-- Productos -->
+
+        <div class="container text-center">
+
+            <h3 class="mt-5 my-4">Productos</h3>
+
+            <div class="row">
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-1.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">Sengoku Dynasty</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>19.99€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-2.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">F1 23</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>52.57€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-3.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">Remnant 2</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>34.89€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-4.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">Atlas Fallen</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>34.72€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-5.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">I Am Future</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>8.49€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col products mx-4">
+                    <img src="/Recursos/img-product-6.jpg" alt="">
+                    <div class="container px-4 text-center">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="p-3">Street Fighter 6</div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <h4>37.62€</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-secondary">Cargar más productos</button>
+
+            </div>
+        </div>
+
+        <!-- Fin Productos -->
+
+        <hr class="separador">
+
+        <!-- Mensaje -->
+
+        <div class="container text-center my-5">
+            <h2>¡No te pierdas ninguna oferta o promoción!</h2>
+            <p>¡Y sé el primero en recibir nuestras ofertas privadas, newsletters y promociones de la semana!</p>
+            <button type="button" class="btn btn-danger">Suscribete</button>
+        </div>
+
+        <!-- Fin Mensaje -->
+
+    </div>
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="black-border col-md-4 text-left">
+                    <h3>Descarga nuestra APP</h3>
+                    <p>Actualmente disponible para teléfonos inteligentes Android y IOS</p>
+                    <img src="../Recursos/playstore logo PNG.png" alt="Play Store logo" width="30%">
+                    <img src="../Recursos/appstore logo PNG.png" alt="App Store logo" width="30%">
+                </div>
+                <div class="black-border col-md-4 text-center">
+                    <img src="/Recursos/Logo.png" class="img-effect" alt="Logo mobile" height="100px">
+                    <p>Estamos ubicados de la Entrada del Barrio Chino, Avenida Segunda, 50 m al Norte, Comercial Nueva
+                        Era
+                        <br>Horario: Lunes a Sábado 9 AM a 7 PM / Domingo 10 AM a 6 PM.
+                    </p>
+                </div>
+                <div class="black-border col text-left">
+                    <h3>Legal</h3>
+                    <ul class="list-group">
+                        <li>Política de Privacidad</li>
+                        <li>Términos y condiciones</li>
+                        <li>Copyright</li>
+                    </ul>
+
+                </div>
+                <div class="black-border col text-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                        <div class="col social">
+                            <img src="/Recursos/facebook.png" class="p-2" alt="logo-facebook" width="45px">
+                        </div>
+                        <div class="col social">
+                            <img src="/Recursos/instagram.png" class="p-2" alt="logo-instagram" width="45px">
+                        </div>
+                        <div class="col social">
+                            <img src="/Recursos/youtube.png" class="p-2" alt="logo-youtube" width="45px">
+                        </div>
+                        <div class="col social">
+                            <img src="/Recursos/tiktok.png" class="p-2" alt="logo-tiktok" width="45px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador">
+            <p class="copyright">Copyright 2023 - Kevin Hernandez Sandi</p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Termina Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="/Js/scripts.js"></script>
+</body>
+
+</html>

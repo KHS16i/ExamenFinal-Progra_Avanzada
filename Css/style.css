@@ -1,0 +1,197 @@
+* {
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    background-color: rgb(83, 83, 83);
+}
+
+.main-container {
+    padding-top: 105px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.separador {
+    border: none;
+    background: #e6e6e6;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.img-effect {
+    transition: filter 0.3s ease-in-out;
+}
+
+.img-effect:hover {
+    filter: hue-rotate(180deg);
+}
+
+/* Header */
+
+.nav-link,
+.img-login {
+    transition: filter 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    filter: brightness(0.6);
+}
+
+/*Fin Header */
+
+/* Modal */
+
+.modal-content{
+    background-color: rgb(83, 83, 83);
+}
+
+.text-modal{
+    margin: 10px 40px;
+}
+
+/* Fin Modal */
+
+/*Contenido Principal */
+
+.container-cover {
+    position: relative;
+    display: inline-block;
+}
+
+.container-cover img{
+    transition: transform 0.7s ease-in-out;
+}
+
+.container-cover img:hover{
+    transform: scale(101%)
+}
+
+.texto-cover {
+    margin-top: -22%;
+    margin-left: 2%;
+    position: absolute;
+    color: white;
+}
+
+#first-text{
+    margin-left: 2%;
+    margin-right: 70%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+#sec-text{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 94, 0, 0.7);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/*Fin Contenido Principal */
+
+/* Productos */
+
+.products{
+    margin-bottom: 2%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.col img{
+    margin-top: 1.5%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.col img:hover{
+    transform: scale(106%)
+}
+
+
+/* Fin Productos */
+
+/* Footer */
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 60px 0;
+}
+
+.social {
+    filter: grayscale(100%);
+}
+
+.social:hover {
+    filter: grayscale(0%);
+}
+
+.black-border {
+    border-right: 2px solid #272727;
+}
+
+.black-border:last-child {
+    border-right: none;
+}
+
+footer p {
+    color: #b9b9b9;
+}
+
+footer ul {
+    color: #b9b9b9;
+    list-style-type: none;
+}
+
+.copyright {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+/* Fin Footer */
+
+
+/*------------------------------Estilos de Contactanos------------------------*/
+
+.body-Contact {
+    background: url('/Recursos/wallpaper-contact.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.div-h1 {
+    background-color: rgba(75, 75, 75, 0.97);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#texto_Conct
+{
+    color: #ffffff;
+    text-align: center;
+}
+
+#Main-Contact {
+    width: 65%;
+    margin: 4% auto;
+}
+
+fieldset {
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10%;
+}
+
+
+/*------------------------------Fin Estilos de Contactanos------------------------*/

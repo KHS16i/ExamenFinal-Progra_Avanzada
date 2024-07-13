@@ -1,3 +1,3 @@
-Ecommerce Web Page.
+E-commerce Web Page.
 
 HTML + Javascript + CSS
